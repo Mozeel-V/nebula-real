@@ -1,0 +1,1002 @@
+[
+  {
+    "api": "api:AP4",
+    "mean_delta": 5.433306097984314e-05,
+    "count": 200
+  },
+  {
+    "api": "api:U88vV0A",
+    "mean_delta": 5.409643054008484e-05,
+    "count": 200
+  },
+  {
+    "api": "api:Dza",
+    "mean_delta": 4.925504326820373e-05,
+    "count": 200
+  },
+  {
+    "api": "api:DFLA",
+    "mean_delta": 4.8865973949432375e-05,
+    "count": 200
+  },
+  {
+    "api": "api:SysWOW64",
+    "mean_delta": 4.847645759582519e-05,
+    "count": 200
+  },
+  {
+    "api": "api:NQx",
+    "mean_delta": 4.738450050354004e-05,
+    "count": 200
+  },
+  {
+    "api": "api:RegQueryInfoKeyW",
+    "mean_delta": 4.678413271903992e-05,
+    "count": 200
+  },
+  {
+    "api": "api:N9P",
+    "mean_delta": 4.5190006494522096e-05,
+    "count": 200
+  },
+  {
+    "api": "api:U_8",
+    "mean_delta": 4.4873803853988645e-05,
+    "count": 200
+  },
+  {
+    "api": "api:OpenSemaphoreW",
+    "mean_delta": 4.4609159231185914e-05,
+    "count": 200
+  },
+  {
+    "api": "api:DELy",
+    "mean_delta": 4.4105350971221926e-05,
+    "count": 200
+  },
+  {
+    "api": "api:QDF",
+    "mean_delta": 4.3036937713623045e-05,
+    "count": 200
+  },
+  {
+    "api": "api:Tce",
+    "mean_delta": 4.191860556602478e-05,
+    "count": 200
+  },
+  {
+    "api": "api:xnUt_",
+    "mean_delta": 4.155993461608887e-05,
+    "count": 200
+  },
+  {
+    "api": "api:GnZ",
+    "mean_delta": 4.0908604860305785e-05,
+    "count": 200
+  },
+  {
+    "api": "api:OpenEventW",
+    "mean_delta": 4.046782851219177e-05,
+    "count": 200
+  },
+  {
+    "api": "api:F68",
+    "mean_delta": 4.0364265441894534e-05,
+    "count": 200
+  },
+  {
+    "api": "api:IPZ",
+    "mean_delta": 4.005521535873413e-05,
+    "count": 200
+  },
+  {
+    "api": "api:FL9",
+    "mean_delta": 3.999456763267517e-05,
+    "count": 200
+  },
+  {
+    "api": "api:DEL",
+    "mean_delta": 3.981009125709534e-05,
+    "count": 200
+  },
+  {
+    "api": "api:F6x",
+    "mean_delta": 3.886952996253967e-05,
+    "count": 200
+  },
+  {
+    "api": "api:DeleteFileW",
+    "mean_delta": 3.857225179672241e-05,
+    "count": 200
+  },
+  {
+    "api": "api:EOse",
+    "mean_delta": 3.838583827018738e-05,
+    "count": 200
+  },
+  {
+    "api": "api:J2J6",
+    "mean_delta": 3.837153315544129e-05,
+    "count": 200
+  },
+  {
+    "api": "api:CreateDirectoryA",
+    "mean_delta": 3.8191229104995725e-05,
+    "count": 200
+  },
+  {
+    "api": "api:LGqE",
+    "mean_delta": 3.807112574577331e-05,
+    "count": 200
+  },
+  {
+    "api": "api:Ukt",
+    "mean_delta": 3.7396401166915895e-05,
+    "count": 200
+  },
+  {
+    "api": "api:CreateEventW",
+    "mean_delta": 3.7372261285781864e-05,
+    "count": 200
+  },
+  {
+    "api": "api:GidJ",
+    "mean_delta": 3.70924174785614e-05,
+    "count": 200
+  },
+  {
+    "api": "api:IHHO4",
+    "mean_delta": 3.6843717098236083e-05,
+    "count": 200
+  },
+  {
+    "api": "api:RSXKNa",
+    "mean_delta": 3.654018044471741e-05,
+    "count": 200
+  },
+  {
+    "api": "api:System32",
+    "mean_delta": 3.650963306427002e-05,
+    "count": 200
+  },
+  {
+    "api": "api:ADP",
+    "mean_delta": 3.551870584487915e-05,
+    "count": 200
+  },
+  {
+    "api": "api:TPBUA",
+    "mean_delta": 3.545567393302917e-05,
+    "count": 200
+  },
+  {
+    "api": "api:DFL",
+    "mean_delta": 3.419935703277588e-05,
+    "count": 200
+  },
+  {
+    "api": "api:E8D",
+    "mean_delta": 3.3473968505859376e-05,
+    "count": 200
+  },
+  {
+    "api": "api:gw_results_clicker",
+    "mean_delta": 3.3440589904785154e-05,
+    "count": 200
+  },
+  {
+    "api": "api:Starting",
+    "mean_delta": 3.320768475532532e-05,
+    "count": 200
+  },
+  {
+    "api": "api:GetFileAttributesW",
+    "mean_delta": 3.3039450645446774e-05,
+    "count": 200
+  },
+  {
+    "api": "api:Way",
+    "mean_delta": 3.2885819673538206e-05,
+    "count": 200
+  },
+  {
+    "api": "api:IPL",
+    "mean_delta": 3.281205892562866e-05,
+    "count": 200
+  },
+  {
+    "api": "api:Dr2t",
+    "mean_delta": 3.2248198986053465e-05,
+    "count": 200
+  },
+  {
+    "api": "api:O6NT",
+    "mean_delta": 3.208160400390625e-05,
+    "count": 200
+  },
+  {
+    "api": "api:COL4C",
+    "mean_delta": 3.2064467668533324e-05,
+    "count": 200
+  },
+  {
+    "api": "api:BlA",
+    "mean_delta": 3.204032778739929e-05,
+    "count": 200
+  },
+  {
+    "api": "api:VLVb",
+    "mean_delta": 3.184884786605835e-05,
+    "count": 200
+  },
+  {
+    "api": "api:ONT",
+    "mean_delta": 3.152117133140564e-05,
+    "count": 200
+  },
+  {
+    "api": "api:VXCXbZ",
+    "mean_delta": 3.1422823667526245e-05,
+    "count": 200
+  },
+  {
+    "api": "api:Aji",
+    "mean_delta": 3.1280815601348874e-05,
+    "count": 200
+  },
+  {
+    "api": "api:IP4",
+    "mean_delta": 3.1080394983291626e-05,
+    "count": 200
+  },
+  {
+    "api": "api:Aj4",
+    "mean_delta": 3.074243664741516e-05,
+    "count": 200
+  },
+  {
+    "api": "api:H0F",
+    "mean_delta": 3.0684322118759156e-05,
+    "count": 200
+  },
+  {
+    "api": "api:C8B",
+    "mean_delta": 3.038272261619568e-05,
+    "count": 200
+  },
+  {
+    "api": "api:YYpw",
+    "mean_delta": 3.022104501724243e-05,
+    "count": 200
+  },
+  {
+    "api": "api:UX4",
+    "mean_delta": 2.9994249343872072e-05,
+    "count": 200
+  },
+  {
+    "api": "api:A2I",
+    "mean_delta": 2.9821544885635375e-05,
+    "count": 200
+  },
+  {
+    "api": "api:L42",
+    "mean_delta": 2.9533058404922486e-05,
+    "count": 200
+  },
+  {
+    "api": "api:I8l",
+    "mean_delta": 2.8171390295028686e-05,
+    "count": 200
+  },
+  {
+    "api": "api:LTx",
+    "mean_delta": 2.8136372566223145e-05,
+    "count": 200
+  },
+  {
+    "api": "api:WWt4",
+    "mean_delta": 2.7733743190765382e-05,
+    "count": 200
+  },
+  {
+    "api": "api:HN4",
+    "mean_delta": 2.739638090133667e-05,
+    "count": 200
+  },
+  {
+    "api": "api:Yh1",
+    "mean_delta": 2.739235758781433e-05,
+    "count": 200
+  },
+  {
+    "api": "api:Dv4",
+    "mean_delta": 2.7158111333847045e-05,
+    "count": 200
+  },
+  {
+    "api": "api:QwE",
+    "mean_delta": 2.6685446500778197e-05,
+    "count": 200
+  },
+  {
+    "api": "api:OZ2",
+    "mean_delta": 2.6310384273529054e-05,
+    "count": 200
+  },
+  {
+    "api": "api:_vq",
+    "mean_delta": 2.624988555908203e-05,
+    "count": 200
+  },
+  {
+    "api": "api:ZTP",
+    "mean_delta": 2.6224851608276368e-05,
+    "count": 200
+  },
+  {
+    "api": "api:GetSystemDirectoryA",
+    "mean_delta": 2.619028091430664e-05,
+    "count": 200
+  },
+  {
+    "api": "api:LoadResource",
+    "mean_delta": 2.6157647371292115e-05,
+    "count": 200
+  },
+  {
+    "api": "api:AjL",
+    "mean_delta": 2.588421106338501e-05,
+    "count": 200
+  },
+  {
+    "api": "api:BQrfC",
+    "mean_delta": 2.575799822807312e-05,
+    "count": 200
+  },
+  {
+    "api": "api:Mj54",
+    "mean_delta": 2.5684535503387452e-05,
+    "count": 200
+  },
+  {
+    "api": "api:Wyq",
+    "mean_delta": 2.5644004344940186e-05,
+    "count": 200
+  },
+  {
+    "api": "api:FzGzGz",
+    "mean_delta": 2.561435103416443e-05,
+    "count": 200
+  },
+  {
+    "api": "api:DeviceIoControl",
+    "mean_delta": 2.55487859249115e-05,
+    "count": 200
+  },
+  {
+    "api": "api:HeE",
+    "mean_delta": 2.544775605201721e-05,
+    "count": 200
+  },
+  {
+    "api": "api:mw_results",
+    "mean_delta": 2.5409311056137086e-05,
+    "count": 200
+  },
+  {
+    "api": "api:HzGzGzb",
+    "mean_delta": 2.5298148393630982e-05,
+    "count": 200
+  },
+  {
+    "api": "api:ES2b",
+    "mean_delta": 2.5000721216201782e-05,
+    "count": 200
+  },
+  {
+    "api": "api:VJXb",
+    "mean_delta": 2.4888813495635986e-05,
+    "count": 200
+  },
+  {
+    "api": "api:GetFileSizeEx",
+    "mean_delta": 2.4865418672561646e-05,
+    "count": 200
+  },
+  {
+    "api": "api:YJ4",
+    "mean_delta": 2.4685710668563844e-05,
+    "count": 200
+  },
+  {
+    "api": "api:Windows",
+    "mean_delta": 2.4670660495758055e-05,
+    "count": 200
+  },
+  {
+    "api": "api:Uof",
+    "mean_delta": 2.4570375680923463e-05,
+    "count": 200
+  },
+  {
+    "api": "api:A2A",
+    "mean_delta": 2.3881494998931886e-05,
+    "count": 200
+  },
+  {
+    "api": "api:bU_8",
+    "mean_delta": 2.3227334022521973e-05,
+    "count": 200
+  },
+  {
+    "api": "api:GTD",
+    "mean_delta": 2.297237515449524e-05,
+    "count": 200
+  },
+  {
+    "api": "api:M74r",
+    "mean_delta": 2.2949129343032836e-05,
+    "count": 200
+  },
+  {
+    "api": "api:AiL",
+    "mean_delta": 2.2934228181838988e-05,
+    "count": 200
+  },
+  {
+    "api": "api:S4Kxi",
+    "mean_delta": 2.2910982370376587e-05,
+    "count": 200
+  },
+  {
+    "api": "api:COM",
+    "mean_delta": 2.2566169500350954e-05,
+    "count": 200
+  },
+  {
+    "api": "api:EjI",
+    "mean_delta": 2.2396445274353027e-05,
+    "count": 200
+  },
+  {
+    "api": "api:C44",
+    "mean_delta": 2.236470580101013e-05,
+    "count": 200
+  },
+  {
+    "api": "api:QrnI",
+    "mean_delta": 2.2222250699996947e-05,
+    "count": 200
+  },
+  {
+    "api": "api:SearchPathW",
+    "mean_delta": 2.2128522396087646e-05,
+    "count": 200
+  },
+  {
+    "api": "api:Vuj",
+    "mean_delta": 2.197936177253723e-05,
+    "count": 200
+  },
+  {
+    "api": "api:XVo",
+    "mean_delta": 2.1788328886032105e-05,
+    "count": 200
+  },
+  {
+    "api": "api:OpenMutexW",
+    "mean_delta": 2.1636039018630982e-05,
+    "count": 200
+  },
+  {
+    "api": "api:QpDF",
+    "mean_delta": 2.1545886993408204e-05,
+    "count": 200
+  },
+  {
+    "api": "api:T4TPB",
+    "mean_delta": 2.0712465047836304e-05,
+    "count": 200
+  },
+  {
+    "api": "api:M4D",
+    "mean_delta": 2.0664483308792114e-05,
+    "count": 200
+  },
+  {
+    "api": "api:Bv4",
+    "mean_delta": 2.0646452903747558e-05,
+    "count": 200
+  },
+  {
+    "api": "api:Np8",
+    "mean_delta": 2.0594149827957153e-05,
+    "count": 200
+  },
+  {
+    "api": "api:GetFileSize",
+    "mean_delta": 2.057313919067383e-05,
+    "count": 200
+  },
+  {
+    "api": "api:AHv",
+    "mean_delta": 2.0444393157958984e-05,
+    "count": 200
+  },
+  {
+    "api": "api:RemoveDirectoryW",
+    "mean_delta": 2.043619751930237e-05,
+    "count": 200
+  },
+  {
+    "api": "api:PLw",
+    "mean_delta": 2.0405501127243043e-05,
+    "count": 200
+  },
+  {
+    "api": "api:AQOC",
+    "mean_delta": 2.028733491897583e-05,
+    "count": 200
+  },
+  {
+    "api": "api:Xb9l8ld",
+    "mean_delta": 1.9893348217010498e-05,
+    "count": 200
+  },
+  {
+    "api": "api:Aq4",
+    "mean_delta": 1.9764453172683714e-05,
+    "count": 200
+  },
+  {
+    "api": "api:LCc",
+    "mean_delta": 1.970246434211731e-05,
+    "count": 200
+  },
+  {
+    "api": "api:o4_",
+    "mean_delta": 1.966908574104309e-05,
+    "count": 200
+  },
+  {
+    "api": "api:XiY0",
+    "mean_delta": 1.9443780183792113e-05,
+    "count": 200
+  },
+  {
+    "api": "api:yv_",
+    "mean_delta": 1.8716901540756225e-05,
+    "count": 200
+  },
+  {
+    "api": "api:DyAK2",
+    "mean_delta": 1.8695443868637087e-05,
+    "count": 200
+  },
+  {
+    "api": "api:DFLI",
+    "mean_delta": 1.85452401638031e-05,
+    "count": 200
+  },
+  {
+    "api": "api:A2EP",
+    "mean_delta": 1.75611674785614e-05,
+    "count": 200
+  },
+  {
+    "api": "api:BltB",
+    "mean_delta": 1.7310529947280885e-05,
+    "count": 200
+  },
+  {
+    "api": "api:WUDn",
+    "mean_delta": 1.7208606004714964e-05,
+    "count": 200
+  },
+  {
+    "api": "api:QIRO",
+    "mean_delta": 1.7180591821670533e-05,
+    "count": 200
+  },
+  {
+    "api": "api:EdbI",
+    "mean_delta": 1.697942614555359e-05,
+    "count": 200
+  },
+  {
+    "api": "api:HHH",
+    "mean_delta": 1.697853207588196e-05,
+    "count": 200
+  },
+  {
+    "api": "api:B214N_",
+    "mean_delta": 1.684829592704773e-05,
+    "count": 200
+  },
+  {
+    "api": "api:GetCurrentThreadId",
+    "mean_delta": 1.6655772924423218e-05,
+    "count": 200
+  },
+  {
+    "api": "api:NBL",
+    "mean_delta": 1.6609430313110353e-05,
+    "count": 200
+  },
+  {
+    "api": "api:Brh",
+    "mean_delta": 1.6331523656845093e-05,
+    "count": 200
+  },
+  {
+    "api": "api:HAt",
+    "mean_delta": 1.622900366783142e-05,
+    "count": 200
+  },
+  {
+    "api": "api:HUGHGm",
+    "mean_delta": 1.604512333869934e-05,
+    "count": 200
+  },
+  {
+    "api": "api:XgR",
+    "mean_delta": 1.563757658004761e-05,
+    "count": 200
+  },
+  {
+    "api": "api:RYf8",
+    "mean_delta": 1.563534140586853e-05,
+    "count": 200
+  },
+  {
+    "api": "api:Ai4",
+    "mean_delta": 1.5225261449813843e-05,
+    "count": 200
+  },
+  {
+    "api": "api:7_H",
+    "mean_delta": 1.4949142932891846e-05,
+    "count": 200
+  },
+  {
+    "api": "api:Edd",
+    "mean_delta": 1.4751404523849488e-05,
+    "count": 200
+  },
+  {
+    "api": "api:Oa0",
+    "mean_delta": 1.4539957046508789e-05,
+    "count": 200
+  },
+  {
+    "api": "api:LGM",
+    "mean_delta": 1.4508813619613647e-05,
+    "count": 200
+  },
+  {
+    "api": "api:BZ0",
+    "mean_delta": 1.4045834541320801e-05,
+    "count": 200
+  },
+  {
+    "api": "api:CreateEventA",
+    "mean_delta": 1.3761520385742187e-05,
+    "count": 200
+  },
+  {
+    "api": "api:GetFileType",
+    "mean_delta": 1.3632774353027344e-05,
+    "count": 200
+  },
+  {
+    "api": "api:QQuPv",
+    "mean_delta": 1.3438165187835694e-05,
+    "count": 200
+  },
+  {
+    "api": "api:CreateMutexW",
+    "mean_delta": 1.3169646263122558e-05,
+    "count": 200
+  },
+  {
+    "api": "api:MapViewOfFile",
+    "mean_delta": 1.3164877891540528e-05,
+    "count": 200
+  },
+  {
+    "api": "api:B1m",
+    "mean_delta": 1.3081580400466919e-05,
+    "count": 200
+  },
+  {
+    "api": "api:WaitForSingleObject",
+    "mean_delta": 1.2906193733215332e-05,
+    "count": 200
+  },
+  {
+    "api": "api:VB6Vb",
+    "mean_delta": 1.2804716825485229e-05,
+    "count": 200
+  },
+  {
+    "api": "api:NJd",
+    "mean_delta": 1.240164041519165e-05,
+    "count": 200
+  },
+  {
+    "api": "api:HHI",
+    "mean_delta": 1.2013018131256103e-05,
+    "count": 200
+  },
+  {
+    "api": "api:NT8",
+    "mean_delta": 1.1977255344390869e-05,
+    "count": 200
+  },
+  {
+    "api": "api:DQ4",
+    "mean_delta": 1.1831521987915039e-05,
+    "count": 200
+  },
+  {
+    "api": "api:PMsA",
+    "mean_delta": 1.1768192052841187e-05,
+    "count": 200
+  },
+  {
+    "api": "api:XiXQ",
+    "mean_delta": 1.1625587940216064e-05,
+    "count": 200
+  },
+  {
+    "api": "api:NX8",
+    "mean_delta": 1.1559128761291504e-05,
+    "count": 200
+  },
+  {
+    "api": "api:X6X",
+    "mean_delta": 1.1158138513565063e-05,
+    "count": 200
+  },
+  {
+    "api": "api:DA_",
+    "mean_delta": 1.0866224765777588e-05,
+    "count": 200
+  },
+  {
+    "api": "api:Tcb",
+    "mean_delta": 1.0850727558135986e-05,
+    "count": 200
+  },
+  {
+    "api": "api:CloseHandle",
+    "mean_delta": 1.0632574558258056e-05,
+    "count": 200
+  },
+  {
+    "api": "api:PJ4",
+    "mean_delta": 1.0527372360229492e-05,
+    "count": 200
+  },
+  {
+    "api": "api:GetSystemDirectoryW",
+    "mean_delta": 1.0148435831069946e-05,
+    "count": 200
+  },
+  {
+    "api": "api:VXKXb",
+    "mean_delta": 1.0043680667877197e-05,
+    "count": 200
+  },
+  {
+    "api": "api:P0VX",
+    "mean_delta": 9.942054748535157e-06,
+    "count": 200
+  },
+  {
+    "api": "api:M74p",
+    "mean_delta": 9.872615337371826e-06,
+    "count": 200
+  },
+  {
+    "api": "api:Ci1",
+    "mean_delta": 9.759664535522461e-06,
+    "count": 200
+  },
+  {
+    "api": "api:ZYgR",
+    "mean_delta": 9.671151638031006e-06,
+    "count": 200
+  },
+  {
+    "api": "api:GetCurrentProcess",
+    "mean_delta": 9.649544954299928e-06,
+    "count": 200
+  },
+  {
+    "api": "api:BgR",
+    "mean_delta": 9.49263572692871e-06,
+    "count": 200
+  },
+  {
+    "api": "api:GetTempPathW",
+    "mean_delta": 8.637458086013794e-06,
+    "count": 200
+  },
+  {
+    "api": "api:Edt",
+    "mean_delta": 8.598566055297851e-06,
+    "count": 200
+  },
+  {
+    "api": "api:OpenEventA",
+    "mean_delta": 8.269101381301879e-06,
+    "count": 200
+  },
+  {
+    "api": "api:VirtualProtect",
+    "mean_delta": 8.209943771362305e-06,
+    "count": 200
+  },
+  {
+    "api": "api:TY4",
+    "mean_delta": 7.968246936798096e-06,
+    "count": 200
+  },
+  {
+    "api": "api:Jcb",
+    "mean_delta": 7.80358910560608e-06,
+    "count": 200
+  },
+  {
+    "api": "api:R8MtY",
+    "mean_delta": 6.947815418243408e-06,
+    "count": 200
+  },
+  {
+    "api": "api:H4af",
+    "mean_delta": 6.8435072898864745e-06,
+    "count": 200
+  },
+  {
+    "api": "api:PYh",
+    "mean_delta": 6.221979856491089e-06,
+    "count": 200
+  },
+  {
+    "api": "api:JGC",
+    "mean_delta": 6.163865327835083e-06,
+    "count": 200
+  },
+  {
+    "api": "api:APL",
+    "mean_delta": 5.99592924118042e-06,
+    "count": 200
+  },
+  {
+    "api": "api:F4FA",
+    "mean_delta": 5.540698766708374e-06,
+    "count": 200
+  },
+  {
+    "api": "api:CreateDirectoryW",
+    "mean_delta": 5.523860454559326e-06,
+    "count": 200
+  },
+  {
+    "api": "api:GetLastError",
+    "mean_delta": 4.6038627624511716e-06,
+    "count": 200
+  },
+  {
+    "api": "api:RegQueryValueExW",
+    "mean_delta": 4.274100065231323e-06,
+    "count": 200
+  },
+  {
+    "api": "api:SSX",
+    "mean_delta": 2.7945637702941893e-06,
+    "count": 200
+  },
+  {
+    "api": "api:TAk",
+    "mean_delta": 1.4254450798034667e-06,
+    "count": 200
+  },
+  {
+    "api": "api:QyA",
+    "mean_delta": 9.211897850036621e-07,
+    "count": 200
+  },
+  {
+    "api": "api:IsProcessorFeaturePresent",
+    "mean_delta": -7.972121238708496e-08,
+    "count": 200
+  },
+  {
+    "api": "api:RegOpenKeyExW",
+    "mean_delta": -1.576542854309082e-06,
+    "count": 200
+  },
+  {
+    "api": "api:Aii",
+    "mean_delta": -1.655071973800659e-06,
+    "count": 200
+  },
+  {
+    "api": "api:VXb",
+    "mean_delta": -1.8246471881866456e-06,
+    "count": 200
+  },
+  {
+    "api": "api:FreeLibrary",
+    "mean_delta": -2.212822437286377e-06,
+    "count": 200
+  },
+  {
+    "api": "api:TPB",
+    "mean_delta": -2.2447109222412107e-06,
+    "count": 200
+  },
+  {
+    "api": "api:YXhf",
+    "mean_delta": -2.5264918804168703e-06,
+    "count": 200
+  },
+  {
+    "api": "api:CreateProcessW",
+    "mean_delta": -3.818720579147339e-06,
+    "count": 200
+  },
+  {
+    "api": "api:RPy",
+    "mean_delta": -4.174262285232544e-06,
+    "count": 200
+  },
+  {
+    "api": "api:RegQueryValueExA",
+    "mean_delta": -4.612654447555542e-06,
+    "count": 200
+  },
+  {
+    "api": "api:Xpv",
+    "mean_delta": -4.8828125e-06,
+    "count": 200
+  },
+  {
+    "api": "api:RegSetValueExW",
+    "mean_delta": -5.829483270645141e-06,
+    "count": 200
+  },
+  {
+    "api": "api:ReadProcessMemory",
+    "mean_delta": -7.81223177909851e-06,
+    "count": 200
+  },
+  {
+    "api": "api:O31",
+    "mean_delta": -9.492337703704834e-06,
+    "count": 200
+  },
+  {
+    "api": "api:RegOpenKeyExA",
+    "mean_delta": -1.0859072208404541e-05,
+    "count": 200
+  },
+  {
+    "api": "api:ReadFile",
+    "mean_delta": -1.3411194086074829e-05,
+    "count": 200
+  },
+  {
+    "api": "api:WriteFile",
+    "mean_delta": -1.4948248863220214e-05,
+    "count": 200
+  },
+  {
+    "api": "api:GetCurrentProcessId",
+    "mean_delta": -1.8841922283172608e-05,
+    "count": 200
+  }
+]

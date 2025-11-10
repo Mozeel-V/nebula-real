@@ -1,0 +1,9 @@
+{
+  "total_samples": 2000,
+  "total_malware": 1000,
+  "attacked": 500,
+  "skipped": 0,
+  "n_replace": 6,
+  "k": 32,
+  "elapsed_s": 0.0
+}

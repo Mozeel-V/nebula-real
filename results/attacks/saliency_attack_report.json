@@ -1,0 +1,13 @@
+{
+  "total_samples": 2000,
+  "total_malware": 1000,
+  "attacked": 200,
+  "skipped": 0,
+  "start_time": 1762671775.4691346,
+  "seed": 42,
+  "n_replace": 6,
+  "k": 32,
+  "use_sampler": true,
+  "end_time": 1762671777.2394097,
+  "elapsed_s": 1.7702751159667969
+}

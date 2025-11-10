@@ -1,0 +1,1002 @@
+[
+  {
+    "api": "function|ReadFile",
+    "mean_delta": -0.0005947214365005493,
+    "count": 400
+  },
+  {
+    "api": "function|IsProcessorFeaturePresent",
+    "mean_delta": -0.0006609216332435607,
+    "count": 400
+  },
+  {
+    "api": "function|ReadProcessMemory",
+    "mean_delta": -0.000677499920129776,
+    "count": 400
+  },
+  {
+    "api": "function|CreateProcessW",
+    "mean_delta": -0.0006959180533885955,
+    "count": 400
+  },
+  {
+    "api": "function|CreateSemaphoreA",
+    "mean_delta": -0.0006981457769870758,
+    "count": 400
+  },
+  {
+    "api": "function|WriteFile",
+    "mean_delta": -0.0007030335068702698,
+    "count": 400
+  },
+  {
+    "api": "module|MSCTF.dll",
+    "mean_delta": -0.000706246942281723,
+    "count": 400
+  },
+  {
+    "api": "module|msdtcprx.dll",
+    "mean_delta": -0.0007145372778177262,
+    "count": 400
+  },
+  {
+    "api": "function|DeleteFileW",
+    "mean_delta": -0.0007155442237854004,
+    "count": 400
+  },
+  {
+    "api": "module|UxTheme.dll",
+    "mean_delta": -0.000721709057688713,
+    "count": 400
+  },
+  {
+    "api": "module|ole32.dll",
+    "mean_delta": -0.0007294478267431259,
+    "count": 400
+  },
+  {
+    "api": "module|FWPUCLNT.DLL",
+    "mean_delta": -0.0007344752550125123,
+    "count": 400
+  },
+  {
+    "api": "module|pnrpnsp.dll",
+    "mean_delta": -0.0007349596917629242,
+    "count": 400
+  },
+  {
+    "api": "function|CreateMutexW",
+    "mean_delta": -0.0007464715093374253,
+    "count": 400
+  },
+  {
+    "api": "module|NapiNSP.dll",
+    "mean_delta": -0.0007497687637805938,
+    "count": 400
+  },
+  {
+    "api": "module|wininet.dll",
+    "mean_delta": -0.0007595656812191009,
+    "count": 400
+  },
+  {
+    "api": "module|ucrtbase.dll",
+    "mean_delta": -0.0007654087245464325,
+    "count": 400
+  },
+  {
+    "api": "module|mswsock.dll",
+    "mean_delta": -0.0007673963904380798,
+    "count": 400
+  },
+  {
+    "api": "module|win32u.dll",
+    "mean_delta": -0.0007687570154666901,
+    "count": 400
+  },
+  {
+    "api": "function|GetCurrentProcessId",
+    "mean_delta": -0.0007710269093513488,
+    "count": 400
+  },
+  {
+    "api": "module|nsi.dll",
+    "mean_delta": -0.0007712613046169281,
+    "count": 400
+  },
+  {
+    "api": "function|GetFileSize",
+    "mean_delta": -0.0007725480198860168,
+    "count": 400
+  },
+  {
+    "api": "module|msvcp_win.dll",
+    "mean_delta": -0.0007731007039546967,
+    "count": 400
+  },
+  {
+    "api": "module|profapi.dll",
+    "mean_delta": -0.0007746847718954086,
+    "count": 400
+  },
+  {
+    "api": "module|windows.storage.dll",
+    "mean_delta": -0.0007816492766141892,
+    "count": 400
+  },
+  {
+    "api": "function|GetCurrentProcess",
+    "mean_delta": -0.0007837015390396118,
+    "count": 400
+  },
+  {
+    "api": "module|cryptsp.dll",
+    "mean_delta": -0.0007838252931833267,
+    "count": 400
+  },
+  {
+    "api": "function|GetVolumePathNameW",
+    "mean_delta": -0.0007852257788181305,
+    "count": 400
+  },
+  {
+    "api": "function|CreateProcessA",
+    "mean_delta": -0.0007852532714605332,
+    "count": 400
+  },
+  {
+    "api": "function|MapViewOfFile",
+    "mean_delta": -0.0007879506051540375,
+    "count": 400
+  },
+  {
+    "api": "module|ADVAPI32.dll",
+    "mean_delta": -0.0007885531336069107,
+    "count": 400
+  },
+  {
+    "api": "module|bcryptPrimitives.dll",
+    "mean_delta": -0.0007933893799781799,
+    "count": 400
+  },
+  {
+    "api": "module|msvcrt.dll",
+    "mean_delta": -0.0007968851923942566,
+    "count": 400
+  },
+  {
+    "api": "module|dinput.dll",
+    "mean_delta": -0.0007977228611707688,
+    "count": 400
+  },
+  {
+    "api": "module|OLEAUT32.dll",
+    "mean_delta": -0.0008002791553735733,
+    "count": 400
+  },
+  {
+    "api": "module|esent.dll",
+    "mean_delta": -0.0008042951673269272,
+    "count": 400
+  },
+  {
+    "api": "module|gdi32.dll",
+    "mean_delta": -0.0008088425546884536,
+    "count": 400
+  },
+  {
+    "api": "function|GetDiskFreeSpaceExW",
+    "mean_delta": -0.0008097396790981293,
+    "count": 400
+  },
+  {
+    "api": "module|setupapi.dll",
+    "mean_delta": -0.0008111202716827393,
+    "count": 400
+  },
+  {
+    "api": "module|combase.dll",
+    "mean_delta": -0.0008130338788032532,
+    "count": 400
+  },
+  {
+    "api": "function|CloseHandle",
+    "mean_delta": -0.0008135883510112762,
+    "count": 400
+  },
+  {
+    "api": "function|GetComputerNameW",
+    "mean_delta": -0.0008200432360172271,
+    "count": 400
+  },
+  {
+    "api": "function|CreateEventW",
+    "mean_delta": -0.0008219847083091736,
+    "count": 400
+  },
+  {
+    "api": "function|GetSystemDirectoryW",
+    "mean_delta": -0.0008222059905529022,
+    "count": 400
+  },
+  {
+    "api": "function|FreeLibrary",
+    "mean_delta": -0.000823495015501976,
+    "count": 400
+  },
+  {
+    "api": "function|AdjustTokenPrivileges",
+    "mean_delta": -0.0008242347836494446,
+    "count": 400
+  },
+  {
+    "api": "module|IMM32.DLL",
+    "mean_delta": -0.0008261114358901978,
+    "count": 400
+  },
+  {
+    "api": "function|GetComputerNameA",
+    "mean_delta": -0.0008266886323690415,
+    "count": 400
+  },
+  {
+    "api": "function|DnsNameCompare_W",
+    "mean_delta": -0.0008275710791349411,
+    "count": 400
+  },
+  {
+    "api": "module|KernelBase.dll",
+    "mean_delta": -0.0008295805752277374,
+    "count": 400
+  },
+  {
+    "api": "function|OpenProcess",
+    "mean_delta": -0.0008303196728229522,
+    "count": 400
+  },
+  {
+    "api": "module|user32.dll",
+    "mean_delta": -0.0008313456922769547,
+    "count": 400
+  },
+  {
+    "api": "module|Wldap32.dll",
+    "mean_delta": -0.0008334407210350037,
+    "count": 400
+  },
+  {
+    "api": "function|DeleteFileA",
+    "mean_delta": -0.000835181474685669,
+    "count": 400
+  },
+  {
+    "api": "module|mtxoci.dll",
+    "mean_delta": -0.0008355792611837387,
+    "count": 400
+  },
+  {
+    "api": "function|GetFileAttributesA",
+    "mean_delta": -0.0008376406133174896,
+    "count": 400
+  },
+  {
+    "api": "module|imagehlp.dll",
+    "mean_delta": -0.0008381582051515579,
+    "count": 400
+  },
+  {
+    "api": "function|DeviceIoControl",
+    "mean_delta": -0.0008400014042854309,
+    "count": 400
+  },
+  {
+    "api": "function|CreateMutexA",
+    "mean_delta": -0.0008408494293689727,
+    "count": 400
+  },
+  {
+    "api": "module|wintrust.dll",
+    "mean_delta": -0.0008410929888486862,
+    "count": 400
+  },
+  {
+    "api": "function|CopyFileA",
+    "mean_delta": -0.0008414095640182495,
+    "count": 400
+  },
+  {
+    "api": "function|GetShortPathNameA",
+    "mean_delta": -0.0008433905988931656,
+    "count": 400
+  },
+  {
+    "api": "function|RegSetValueExA",
+    "mean_delta": -0.000843609943985939,
+    "count": 400
+  },
+  {
+    "api": "module|winspool.drv",
+    "mean_delta": -0.0008444323390722274,
+    "count": 400
+  },
+  {
+    "api": "function|RegQueryInfoKeyW",
+    "mean_delta": -0.0008449526876211167,
+    "count": 400
+  },
+  {
+    "api": "module|WS2_32.dll",
+    "mean_delta": -0.0008454876393079757,
+    "count": 400
+  },
+  {
+    "api": "module|shcore.dll",
+    "mean_delta": -0.0008462055772542953,
+    "count": 400
+  },
+  {
+    "api": "module|DUser.dll",
+    "mean_delta": -0.0008470875769853592,
+    "count": 400
+  },
+  {
+    "api": "module|rsaenh.dll",
+    "mean_delta": -0.0008475634455680847,
+    "count": 400
+  },
+  {
+    "api": "function|CreateDirectoryW",
+    "mean_delta": -0.0008480327576398849,
+    "count": 400
+  },
+  {
+    "api": "module|iertutil.dll",
+    "mean_delta": -0.0008483565598726273,
+    "count": 400
+  },
+  {
+    "api": "function|OpenEventA",
+    "mean_delta": -0.0008485067635774612,
+    "count": 400
+  },
+  {
+    "api": "module|msacm32.dll",
+    "mean_delta": -0.0008488168567419052,
+    "count": 400
+  },
+  {
+    "api": "module|COMCTL32.DLL",
+    "mean_delta": -0.0008493265509605407,
+    "count": 400
+  },
+  {
+    "api": "module|userenv.dll",
+    "mean_delta": -0.0008498203009366989,
+    "count": 400
+  },
+  {
+    "api": "module|devobj.dll",
+    "mean_delta": -0.0008499247580766678,
+    "count": 400
+  },
+  {
+    "api": "function|GetTempPathW",
+    "mean_delta": -0.0008503957092761993,
+    "count": 400
+  },
+  {
+    "api": "module|fastprox.dll",
+    "mean_delta": -0.0008509049564599991,
+    "count": 400
+  },
+  {
+    "api": "module|RPCRT4.dll",
+    "mean_delta": -0.00085130475461483,
+    "count": 400
+  },
+  {
+    "api": "module|wbemcomn.dll",
+    "mean_delta": -0.000851435586810112,
+    "count": 400
+  },
+  {
+    "api": "function|OpenSCManagerA",
+    "mean_delta": -0.0008515940606594086,
+    "count": 400
+  },
+  {
+    "api": "module|IPHLPAPI.DLL",
+    "mean_delta": -0.0008522303402423859,
+    "count": 400
+  },
+  {
+    "api": "function|CreateSemaphoreW",
+    "mean_delta": -0.0008547914773225784,
+    "count": 400
+  },
+  {
+    "api": "module|SysWOW6",
+    "mean_delta": -0.000855514332652092,
+    "count": 400
+  },
+  {
+    "api": "module|mfc42u.dll",
+    "mean_delta": -0.0008574698120355606,
+    "count": 400
+  },
+  {
+    "api": "module|apphelp.dll",
+    "mean_delta": -0.0008581652492284775,
+    "count": 400
+  },
+  {
+    "api": "module|COMCTL32.dll",
+    "mean_delta": -0.0008587313443422318,
+    "count": 400
+  },
+  {
+    "api": "module|d3d9.dll",
+    "mean_delta": -0.0008592595905065536,
+    "count": 400
+  },
+  {
+    "api": "function|inet_addr",
+    "mean_delta": -0.000860433429479599,
+    "count": 400
+  },
+  {
+    "api": "function|OpenMutexW",
+    "mean_delta": -0.0008606526255607605,
+    "count": 400
+  },
+  {
+    "api": "function|OpenSemaphoreW",
+    "mean_delta": -0.0008609884977340698,
+    "count": 400
+  },
+  {
+    "api": "function|GetSystemDirectoryA",
+    "mean_delta": -0.0008610859513282776,
+    "count": 400
+  },
+  {
+    "api": "function|RegOpenKeyExW",
+    "mean_delta": -0.0008629043400287628,
+    "count": 400
+  },
+  {
+    "api": "module|timestamp",
+    "mean_delta": -0.000863313376903534,
+    "count": 400
+  },
+  {
+    "api": "module|winhttp.dll",
+    "mean_delta": -0.0008637072145938874,
+    "count": 400
+  },
+  {
+    "api": "module|resutils.dll",
+    "mean_delta": -0.0008649721741676331,
+    "count": 400
+  },
+  {
+    "api": "module|TextInputFramework.dll",
+    "mean_delta": -0.0008651310205459595,
+    "count": 400
+  },
+  {
+    "api": "module|rasapi32.dll",
+    "mean_delta": -0.0008654750138521194,
+    "count": 400
+  },
+  {
+    "api": "module|propsys.dll",
+    "mean_delta": -0.0008656416088342666,
+    "count": 400
+  },
+  {
+    "api": "function|SearchPathW",
+    "mean_delta": -0.0008671700209379196,
+    "count": 400
+  },
+  {
+    "api": "module|sechost.dll",
+    "mean_delta": -0.0008675705641508103,
+    "count": 400
+  },
+  {
+    "api": "module|comctl32.dll",
+    "mean_delta": -0.0008688051998615265,
+    "count": 400
+  },
+  {
+    "api": "module|USER32.dll",
+    "mean_delta": -0.0008704680949449539,
+    "count": 400
+  },
+  {
+    "api": "function|LookupPrivilegeValueA",
+    "mean_delta": -0.000870615690946579,
+    "count": 400
+  },
+  {
+    "api": "function|GetTempPathA",
+    "mean_delta": -0.0008707283437252044,
+    "count": 400
+  },
+  {
+    "api": "module|dnsapi.dll",
+    "mean_delta": -0.0008707820624113083,
+    "count": 400
+  },
+  {
+    "api": "function|GetUserNameA",
+    "mean_delta": -0.0008708463609218598,
+    "count": 400
+  },
+  {
+    "api": "module|twinapi.appcore.dll",
+    "mean_delta": -0.0008710358291864395,
+    "count": 400
+  },
+  {
+    "api": "module|advapi32.dll",
+    "mean_delta": -0.0008718879520893097,
+    "count": 400
+  },
+  {
+    "api": "module|GDI32.dll",
+    "mean_delta": -0.0008741653710603714,
+    "count": 400
+  },
+  {
+    "api": "function|VirtualProtect",
+    "mean_delta": -0.00087562195956707,
+    "count": 400
+  },
+  {
+    "api": "function|RemoveDirectoryW",
+    "mean_delta": -0.0008793282508850098,
+    "count": 400
+  },
+  {
+    "api": "module|logoncli.dll",
+    "mean_delta": -0.0008801281452178955,
+    "count": 400
+  },
+  {
+    "api": "function|CreateDirectoryA",
+    "mean_delta": -0.0008803491294384003,
+    "count": 400
+  },
+  {
+    "api": "module|urlmon.dll",
+    "mean_delta": -0.0008818390220403671,
+    "count": 400
+  },
+  {
+    "api": "function|GetFileSizeEx",
+    "mean_delta": -0.000882994458079338,
+    "count": 400
+  },
+  {
+    "api": "module|dbghelp.dll",
+    "mean_delta": -0.000884317085146904,
+    "count": 400
+  },
+  {
+    "api": "module|msctf.dll",
+    "mean_delta": -0.0008848084509372711,
+    "count": 400
+  },
+  {
+    "api": "module|ws2_32.dll",
+    "mean_delta": -0.0008856237679719925,
+    "count": 400
+  },
+  {
+    "api": "module|oledlg.dll",
+    "mean_delta": -0.0008871489018201828,
+    "count": 400
+  },
+  {
+    "api": "function|ShellExecuteExW",
+    "mean_delta": -0.0008874179422855377,
+    "count": 400
+  },
+  {
+    "api": "module|nlaapi.dll",
+    "mean_delta": -0.0008890317380428315,
+    "count": 400
+  },
+  {
+    "api": "function|GetShortPathNameW",
+    "mean_delta": -0.0008902644366025925,
+    "count": 400
+  },
+  {
+    "api": "module|crypt32.dll",
+    "mean_delta": -0.0008904429525136947,
+    "count": 400
+  },
+  {
+    "api": "module|rpcrt4.dll",
+    "mean_delta": -0.0008918534219264984,
+    "count": 400
+  },
+  {
+    "api": "module|ntdll.dll",
+    "mean_delta": -0.0008955524861812592,
+    "count": 400
+  },
+  {
+    "api": "module|WINSTA.dll",
+    "mean_delta": -0.0008958067744970321,
+    "count": 400
+  },
+  {
+    "api": "module|olepro32.dll",
+    "mean_delta": -0.0009011115878820419,
+    "count": 400
+  },
+  {
+    "api": "module|imm32.dll",
+    "mean_delta": -0.0009018810093402862,
+    "count": 400
+  },
+  {
+    "api": "function|GetFileAttributesW",
+    "mean_delta": -0.0009019800275564194,
+    "count": 400
+  },
+  {
+    "api": "function|GetCurrentThreadId",
+    "mean_delta": -0.0009023299813270568,
+    "count": 400
+  },
+  {
+    "api": "module|ddraw.dll",
+    "mean_delta": -0.0009024595469236374,
+    "count": 400
+  },
+  {
+    "api": "module|WindowsCodecs.dll",
+    "mean_delta": -0.0009044650942087173,
+    "count": 400
+  },
+  {
+    "api": "module|oleaut32.dll",
+    "mean_delta": -0.0009048066288232803,
+    "count": 400
+  },
+  {
+    "api": "function|CopyFileExW",
+    "mean_delta": -0.0009051420539617538,
+    "count": 400
+  },
+  {
+    "api": "module|mpr.dll",
+    "mean_delta": -0.0009058942645788193,
+    "count": 400
+  },
+  {
+    "api": "module|WinTypes.dll",
+    "mean_delta": -0.0009080658107995987,
+    "count": 400
+  },
+  {
+    "api": "function|RegSetValueExW",
+    "mean_delta": -0.0009086109697818756,
+    "count": 400
+  },
+  {
+    "api": "module|shfolder.dll",
+    "mean_delta": -0.0009091366082429886,
+    "count": 400
+  },
+  {
+    "api": "function|WaitForSingleObject",
+    "mean_delta": -0.0009096388518810272,
+    "count": 400
+  },
+  {
+    "api": "module|dsrole.dll",
+    "mean_delta": -0.0009097780287265777,
+    "count": 400
+  },
+  {
+    "api": "function|SHGetFolderPathW",
+    "mean_delta": -0.0009133331477642059,
+    "count": 400
+  },
+  {
+    "api": "function|SHGetFolderPathA",
+    "mean_delta": -0.0009149355441331864,
+    "count": 400
+  },
+  {
+    "api": "module|msvbvm60.dll",
+    "mean_delta": -0.0009154842793941498,
+    "count": 400
+  },
+  {
+    "api": "module|kernel32.dll",
+    "mean_delta": -0.000918290838599205,
+    "count": 400
+  },
+  {
+    "api": "module|wkscli.dll",
+    "mean_delta": -0.0009184657037258149,
+    "count": 400
+  },
+  {
+    "api": "function|LoadResource",
+    "mean_delta": -0.0009201972931623458,
+    "count": 400
+  },
+  {
+    "api": "module|ntmarta.dll",
+    "mean_delta": -0.0009214179962873459,
+    "count": 400
+  },
+  {
+    "api": "function|OpenEventW",
+    "mean_delta": -0.0009222778677940368,
+    "count": 400
+  },
+  {
+    "api": "function|CryptAcquireContextW",
+    "mean_delta": -0.0009226347506046295,
+    "count": 400
+  },
+  {
+    "api": "module|gdi32full.dll",
+    "mean_delta": -0.000922907367348671,
+    "count": 400
+  },
+  {
+    "api": "function|GetLastError",
+    "mean_delta": -0.0009234116971492767,
+    "count": 400
+  },
+  {
+    "api": "module|winmm.dll",
+    "mean_delta": -0.0009239304810762406,
+    "count": 400
+  },
+  {
+    "api": "module|shlwapi.dll",
+    "mean_delta": -0.0009262342751026153,
+    "count": 400
+  },
+  {
+    "api": "function|OpenMutexA",
+    "mean_delta": -0.0009267167001962662,
+    "count": 400
+  },
+  {
+    "api": "function|HeapFree",
+    "mean_delta": -0.0009269332140684127,
+    "count": 400
+  },
+  {
+    "api": "module|srvcli.dll",
+    "mean_delta": -0.0009291335195302963,
+    "count": 400
+  },
+  {
+    "api": "module|cfgmgr32.dll",
+    "mean_delta": -0.0009293891489505768,
+    "count": 400
+  },
+  {
+    "api": "module|bcrypt.dll",
+    "mean_delta": -0.0009301140159368515,
+    "count": 400
+  },
+  {
+    "api": "function|LookupPrivilegeValueW",
+    "mean_delta": -0.000930817723274231,
+    "count": 400
+  },
+  {
+    "api": "module|NUM.TMP",
+    "mean_delta": -0.0009319142997264862,
+    "count": 400
+  },
+  {
+    "api": "module|uxtheme.dll",
+    "mean_delta": -0.0009322256594896317,
+    "count": 400
+  },
+  {
+    "api": "module|shell32.dll",
+    "mean_delta": -0.0009343424439430237,
+    "count": 400
+  },
+  {
+    "api": "module|textinputframework.dll",
+    "mean_delta": -0.000941927582025528,
+    "count": 400
+  },
+  {
+    "api": "function|GetFileType",
+    "mean_delta": -0.0009434149414300918,
+    "count": 400
+  },
+  {
+    "api": "module|dbgcore.dll",
+    "mean_delta": -0.0009440797567367554,
+    "count": 400
+  },
+  {
+    "api": "module|SHCore.dll",
+    "mean_delta": -0.0009458663314580917,
+    "count": 400
+  },
+  {
+    "api": "module|netutils.dll",
+    "mean_delta": -0.0009459115564823151,
+    "count": 400
+  },
+  {
+    "api": "module|mtxclu.dll",
+    "mean_delta": -0.0009487173706293106,
+    "count": 400
+  },
+  {
+    "api": "function|CreateEventA",
+    "mean_delta": -0.0009498737007379532,
+    "count": 400
+  },
+  {
+    "api": "module|oleacc.dll",
+    "mean_delta": -0.0009509638696908951,
+    "count": 400
+  },
+  {
+    "api": "module|sspicli.dll",
+    "mean_delta": -0.0009539202600717544,
+    "count": 400
+  },
+  {
+    "api": "function|RegQueryValueExA",
+    "mean_delta": -0.0009539882093667984,
+    "count": 400
+  },
+  {
+    "api": "module|odbc32.dll",
+    "mean_delta": -0.0009543652087450027,
+    "count": 400
+  },
+  {
+    "api": "module|CoreUIComponents.dll",
+    "mean_delta": -0.0009579394757747651,
+    "count": 400
+  },
+  {
+    "api": "module|winmmbase.dll",
+    "mean_delta": -0.0009581266343593598,
+    "count": 400
+  },
+  {
+    "api": "module|TextShaping.dll",
+    "mean_delta": -0.0009582941979169846,
+    "count": 400
+  },
+  {
+    "api": "module|wldp.dll",
+    "mean_delta": -0.0009651501476764679,
+    "count": 400
+  },
+  {
+    "api": "module|winsta.dll",
+    "mean_delta": -0.0009653633832931519,
+    "count": 400
+  },
+  {
+    "api": "module|clbcatq.dll",
+    "mean_delta": -0.0009678048640489579,
+    "count": 400
+  },
+  {
+    "api": "function|ShellExecuteExA",
+    "mean_delta": -0.0009691402316093445,
+    "count": 400
+  },
+  {
+    "api": "function|CreateToolhelp32Snapshot",
+    "mean_delta": -0.0009694957733154297,
+    "count": 400
+  },
+  {
+    "api": "module|clusapi.dll",
+    "mean_delta": -0.0009700736403465271,
+    "count": 400
+  },
+  {
+    "api": "module|malware.exe",
+    "mean_delta": -0.00097725510597229,
+    "count": 400
+  },
+  {
+    "api": "module|CoreMessaging.dll",
+    "mean_delta": -0.0009784264117479325,
+    "count": 400
+  },
+  {
+    "api": "module|comsvcs.dll",
+    "mean_delta": -0.0009791263937950134,
+    "count": 400
+  },
+  {
+    "api": "module|WINTRUST.dll",
+    "mean_delta": -0.0009796670824289322,
+    "count": 400
+  },
+  {
+    "api": "module|KERNEL32.DLL",
+    "mean_delta": -0.00098028726875782,
+    "count": 400
+  },
+  {
+    "api": "function|RegQueryValueExW",
+    "mean_delta": -0.0009870564937591554,
+    "count": 400
+  },
+  {
+    "api": "function|RegOpenKeyExA",
+    "mean_delta": -0.0009891965985298157,
+    "count": 400
+  },
+  {
+    "api": "module|d3d10warp.dll",
+    "mean_delta": -0.0009895972907543182,
+    "count": 400
+  },
+  {
+    "api": "module|mscms.dll",
+    "mean_delta": -0.0009948120266199112,
+    "count": 400
+  },
+  {
+    "api": "function|CreateThread",
+    "mean_delta": -0.0009967046976089478,
+    "count": 400
+  },
+  {
+    "api": "module|ieframe.dll",
+    "mean_delta": -0.0009978382289409636,
+    "count": 400
+  },
+  {
+    "api": "module|gdiplus.dll",
+    "mean_delta": -0.0010003593564033508,
+    "count": 400
+  },
+  {
+    "api": "module|samcli.dll",
+    "mean_delta": -0.001016947329044342,
+    "count": 400
+  },
+  {
+    "api": "module|bcryptprimitives.dll",
+    "mean_delta": -0.0010184863954782485,
+    "count": 400
+  },
+  {
+    "api": "module|msi.dll",
+    "mean_delta": -0.0010422133654356004,
+    "count": 400
+  },
+  {
+    "api": "module|SETUPAPI.dll",
+    "mean_delta": -0.0010423535853624343,
+    "count": 400
+  },
+  {
+    "api": "module|KERNELBASE.dll",
+    "mean_delta": -0.001050199046730995,
+    "count": 400
+  }
+]
