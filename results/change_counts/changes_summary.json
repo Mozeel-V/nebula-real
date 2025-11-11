@@ -1,0 +1,12 @@
+{
+  "threshold_used": 0.3919597989949749,
+  "n_samples_examined": 2000,
+  "samples_with_any_change": 16,
+  "pct_samples_changed": 0.8,
+  "total_windows_before": 609873,
+  "total_windows_after": 609873,
+  "total_windows_changed": 20,
+  "pct_windows_changed": 0.0032793712789384016,
+  "total_flipped_1_to_0": 9,
+  "total_flipped_0_to_1": 11
+}

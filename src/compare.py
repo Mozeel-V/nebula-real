@@ -1,150 +1,148 @@
 #!/usr/bin/env python3
 """
-Compare BEFORE and AFTER attack evaluation results.
+Compare BEFORE and AFTER window evaluations and create **class-timeline** plots
+(0 = benign window, 1 = malware window) side-by-side per sample.
 
-Inputs:
-  --before : window_eval.json from clean dataset (baseline)
-  --after  : window_eval.json from attacked dataset
-  --zero_fp: JSON with threshold info (optional, from find_threshold_and_minwins.py)
-  --out_dir: output folder for comparison plots and summary CSV
+- Loads window_eval JSONs (before/after) and a threshold JSON (accepts "thr" or "threshold")
+- Converts per-window probabilities -> classes using thr
+- Produces per-sample PNGs into out_dir/per_sample/ (filename sample_<sid>.png)
+- Produces a CSV / JSON summary with counts (mal windows before/after, flipped windows)
 
-Outputs:
-  - comparison_summary.csv: per-sample detection summary
-  - per_sample/*.png: timeline plots showing P(malware) before vs after
-  - global summary printed to stdout
-
-Usage example:
-  python compare.py \
-    --before results/window_eval/window_eval.json \
-    --after results/window_eval_after/window_eval.json \
-    --zero_fp results/best_combo.json \
-    --out_dir results/comparisons
+Usage:
+  n
 """
-
-import argparse
-import json
-import csv
+import argparse, json, csv
 from pathlib import Path
 import numpy as np
 import matplotlib.pyplot as plt
 
-def load_window_eval(path):
+def load_json(path):
     with open(path, "r", encoding="utf-8") as f:
-        data = json.load(f)
-    return data.get("samples", {})
+        return json.load(f)
 
-def compute_sample_maxes(samples):
-    """Return {sid: max_score, label} for a given window_eval."""
-    out = {}
-    for sid, info in samples.items():
-        scores = info.get("scores", [])
-        if not scores:
-            maxs = 0.0
-        else:
-            maxs = float(max(scores))
-        out[sid] = {"label": int(info.get("label", 0)), "max": maxs}
-    return out
+def get_threshold(z):
+    # accept several common keys
+    for k in ("thr", "threshold", "thr_val", "value"):
+        if k in z:
+            return float(z[k])
+    # legacy: maybe saved as {"thr":..., "minwins":...}
+    if "thr" in z:
+        return float(z["thr"])
+    raise KeyError("no threshold key found in zero_fp JSON (expected 'thr' or 'threshold')")
 
-def load_threshold(zero_fp_path):
-    try:
-        thr = 0.5
-        minwins = 1
-        if zero_fp_path and Path(zero_fp_path).exists():
-            j = json.load(open(zero_fp_path, "r", encoding="utf-8"))
-            thr = float(j.get("thr", thr))
-            minwins = int(j.get("minwins", 1))
-        return thr, minwins
-    except Exception as e:
-        print("[WARN] could not load threshold file:", e)
-        return 0.5, 1
+def scores_to_classes(scores, thr):
+    # convert probabilities to 0/1 using threshold (>= thr -> 1)
+    return [1 if (float(s) >= thr - 1e-12) else 0 for s in scores]
 
-def plot_comparison(before_scores, after_scores, sid, lab, out_dir):
-    """Plot before/after per-sample window scores."""
-    fig, ax = plt.subplots(figsize=(6,2.4))
-    ax.plot(before_scores, label="Before", color="C0", linewidth=0.6)
-    ax.plot(after_scores, label="After", color="C3", linewidth=0.6)
-    ax.set_ylim(0, 1)
-    ax.set_xlabel("Window Index")
-    ax.set_ylabel("P(malware)")
-    ax.set_title(f"SID={sid} label={lab}")
-    ax.legend()
-    outp = Path(out_dir) / f"{sid}.png"
-    fig.tight_layout()
-    fig.savefig(outp, dpi=120)
+def plot_classes(before_cls, after_cls, sid, label, outpath, thr, show_prob_overlay=False, before_probs=None, after_probs=None):
+    # produce clean side-by-side class timelines (step)
+    nb = len(before_cls); na = len(after_cls)
+    fig, axs = plt.subplots(1, 2, figsize=(10, 2.8), sharey=True)
+    xs_b = np.arange(nb); xs_a = np.arange(na)
+    axs[0].step(xs_b, before_cls, where="mid", linewidth=1.6)
+    axs[0].set_ylim(-0.12, 1.12)
+    axs[0].set_yticks([0,1]); axs[0].set_yticklabels(["benign","malware"])
+    axs[0].set_xlabel("window index"); axs[0].set_title(f"Before — sample {sid}  (label={label})")
+    axs[1].step(xs_a, after_cls, where="mid", linewidth=1.6)
+    axs[1].set_xlabel("window index"); axs[1].set_title(f"After — sample {sid}  (thr={thr:.6f})")
+
+    # highlight successful evasions (1->0)
+    for i in range(min(nb,na)):
+        if before_cls[i] == 1 and after_cls[i] == 0:
+            for ax in axs:
+                ax.axvspan(i-0.3, i+0.3, color="#4caf50", alpha=0.25)
+
+    # optionally overlay probabilities as faint line (for debugging only)
+    if show_prob_overlay and before_probs is not None and after_probs is not None:
+        ax0r = axs[0].twinx()
+        ax0r.plot(xs_b, before_probs, linewidth=0.7, linestyle=":", alpha=0.8)
+        ax0r.set_ylim(0,1); ax0r.set_yticks([])
+
+        ax1r = axs[1].twinx()
+        ax1r.plot(xs_a, after_probs, linewidth=0.7, linestyle=":", alpha=0.8)
+        ax1r.set_ylim(0,1); ax1r.set_yticks([])
+
+    plt.tight_layout()
+    fig.savefig(outpath, dpi=200)
     plt.close(fig)
 
 def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--before", required=True)
-    ap.add_argument("--after", required=True)
-    #ap.add_argument("--zero_fp", default=None)
-    ap.add_argument("--out_dir", required=True)
-    ap.add_argument("--only_malware", action="store_true", help="compare only malware samples")
-    args = ap.parse_args()
+    p = argparse.ArgumentParser()
+    p.add_argument("--before", required=True, help="window_eval.json BEFORE attack")
+    p.add_argument("--after", required=True, help="window_eval.json AFTER attack")
+    p.add_argument("--zero_fp", required=True, help="json with threshold (key thr or threshold)")
+    p.add_argument("--out_dir", required=True)
+    p.add_argument("--only_malware", action="store_true")
+    p.add_argument("--overwrite", action="store_true")
+    p.add_argument("--overlay_probs", action="store_true", help="also draw faint prob lines for debugging")
+    args = p.parse_args()
+
+    before = load_json(args.before)
+    after = load_json(args.after)
+    z = load_json(args.zero_fp)
+    thr = get_threshold(z)
 
     outdir = Path(args.out_dir)
-    per_sample_dir = outdir / "per_sample"
-    per_sample_dir.mkdir(parents=True, exist_ok=True)
+    per_dir = outdir / "per_sample"
+    per_dir.mkdir(parents=True, exist_ok=True)
+    summary = []
 
-    print("[INFO] Loading data...")
-    before = load_window_eval(args.before)
-    after = load_window_eval(args.after)
-    #thr, minwins = load_threshold(args.zero_fp)
-    #print(f"[INFO] Using threshold={thr:.6f}, minwins={minwins}")
-    thr = 0.848586
+    # union of sample ids present in both files
+    sids = sorted(set(before.get("samples",{}).keys()) & set(after.get("samples",{}).keys()), key=lambda x:int(x))
+    if len(sids) == 0:
+        raise SystemExit("No common sample ids between before/after files")
 
-    before_max = compute_sample_maxes(before)
-    after_max = compute_sample_maxes(after)
-
-    sids = sorted(set(before_max.keys()) & set(after_max.keys()))
-    print(f"[INFO] Found {len(sids)} common samples between before/after")
-
-    # CSV setup
-    summary_path = outdir / "comparison_summary.csv"
-    csv_f = open(summary_path, "w", newline="", encoding="utf-8")
-    writer = csv.writer(csv_f)
-    writer.writerow(["sid", "label", "max_before", "max_after", "pred_before", "pred_after", "changed"])
-
-    tp = tn = fp = fn = evaded = 0
-    total = len(sids)
     for sid in sids:
-        lab = before_max[sid]["label"]
-        mb = before_max[sid]["max"]
-        ma = after_max[sid]["max"]
+        binfo = before["samples"].get(sid)
+        ainfo = after["samples"].get(sid)
+        if binfo is None or ainfo is None:
+            continue
+        label = int(binfo.get("label", 0))
+        if args.only_malware and label != 1:
+            continue
 
-        # classify by simple threshold
-        pb = 1 if mb >= thr else 0
-        pa = 1 if ma >= thr else 0
+        b_scores = [float(x) for x in binfo.get("scores",[])]
+        a_scores = [float(x) for x in ainfo.get("scores",[])]
+        b_cls = scores_to_classes(b_scores, thr)
+        a_cls = scores_to_classes(a_scores, thr)
 
-        # changed detection
-        changed = pb != pa
+        mal_before = sum(1 for v in b_cls if v==1)
+        mal_after = sum(1 for v in a_cls if v==1)
+        flipped = sum(1 for i in range(min(len(b_cls), len(a_cls))) if b_cls[i]==1 and a_cls[i]==0)
 
-        # count confusion
-        if lab == 1:
-            if pb == 1 and pa == 0:
-                evaded += 1
-            if pa == 1 and pb == 1:
-                tp += 1
-            elif pa == 0 and pb == 0:
-                fn += 1
-        elif lab == 0:
-            if pa == 1 and pb == 1:
-                fp += 1
-            elif pa == 0 and pb == 0:
-                tn += 1
+        png = per_dir / f"sample_{sid}_before_after.png"
+        if args.overwrite or (not png.exists()):
+            plot_classes(b_cls, a_cls, sid, label, str(png), thr, show_prob_overlay=args.overlay_probs, before_probs=b_scores, after_probs=a_scores)
 
-        writer.writerow([sid, lab, mb, ma, pb, pa, int(changed)])
+        summary.append({
+            "sample": sid,
+            "label": label,
+            "n_windows_before": len(b_scores),
+            "n_windows_after": len(a_scores),
+            "mal_windows_before": mal_before,
+            "mal_windows_after": mal_after,
+            "flipped_1_to_0": flipped
+        })
 
-        if not args.only_malware or lab == 1:
-            before_scores = before[sid].get("scores", [])
-            after_scores = after[sid].get("scores", [])
-            plot_comparison(before_scores, after_scores, sid, lab, per_sample_dir)
+    # write CSV & JSON summary
+    out_csv = outdir / "comparison_summary.csv"
+    if summary:
+        keys = list(summary[0].keys())
+    else:
+        keys = ["sample","label","n_windows_before","n_windows_after","mal_windows_before","mal_windows_after","flipped_1_to_0"]
+    with open(out_csv, "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=keys)
+        writer.writeheader()
+        for r in summary:
+            writer.writerow(r)
 
-    csv_f.close()
+    with open(outdir / "comparison_summary.json", "w", encoding="utf-8") as jf:
+        json.dump({"threshold": thr, "n_samples": len(summary), "summary": summary}, jf, indent=2)
 
-    print(f"[DONE] Wrote {summary_path}")
-    print(f"[INFO] Total={total}, TP={tp}, TN={tn}, FP={fp}, FN={fn}, Evaded={evaded}")
-    print(f"[INFO] Per-sample plots in {per_sample_dir}")
+    print(f"[DONE] Wrote per-sample plots to {per_dir}")
+    print(f"[DONE] Wrote CSV -> {out_csv}")
+    print(f"[DONE] Wrote JSON -> {outdir / 'comparison_summary.json'}")
+    print(f"[INFO] threshold used = {thr:.6f}")
 
 if __name__ == "__main__":
     main()
