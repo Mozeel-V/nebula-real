@@ -4,19 +4,13 @@ Saliency-guided iterative in-vocab replacement attack (greedy).
 
 Saves attacked dataset as TSV: sid \t label \t trace
 
-Notes:
- - Requires: src/tokenizer.py, src/models/nebula_model.py (NebulaCLS or NebulaTiny)
- - Requires in-vocab candidates JSON produced earlier (results/api_candidates_in_vocab.json)
- - Works on whole trace but computes saliency per-token by backprop through embeddings.
- - Defaults tuned for small 2k dataset and CPU. Increase `n_replace_total` and `cand_sample` for stronger attack if you have more time.
-
-Usage example:
-python src/attacks/saliency_attack_strong.py \
+Usage: 
+python new_src/saliency_attack_strong.py \
   --in_tsv data/dataset_small_2k_normalized.tsv \
   --ckpt checkpoints/run_weighted_w0_8/best.pt \
   --vocab checkpoints/vocab_n.json \
-  --api_candidates results/api_candidates_in_vocab.json \
-  --out results/attacks/saliency_strong_2k.tsv \
+  --api_candidates checkpoints/500_api_candidates.json \
+  --out new_results/attacks/saliency_strong_2k.tsv \
   --only_malware \
   --n_replace_total 12 \
   --topk_salient 20 \
@@ -39,7 +33,6 @@ from nebula_model import NebulaTiny, NebulaCLS
 # ---------- helper: load checkpoint and build model (simple, assumes compatibility) ----------
 def load_model_simple(ckpt_path, vocab_size, device):
     ck = torch.load(ckpt_path, map_location=device)
-    # support checkpoints saved as {"model": state_dict, "config": {...}}
     state = None
     cfg = {}
     if isinstance(ck, dict) and "model" in ck:
@@ -47,7 +40,6 @@ def load_model_simple(ckpt_path, vocab_size, device):
         cfg = ck.get("config", {})
     else:
         state = ck
-    # choose model variant: if state has 'cls_token' use NebulaCLS
     has_cls = any(k.endswith("cls_token") or k == "cls_token" for k in state.keys())
     d_model = int(cfg.get("d_model", 128))
     nhead = int(cfg.get("nhead", 4))
@@ -58,11 +50,9 @@ def load_model_simple(ckpt_path, vocab_size, device):
         model = NebulaCLS(vocab_size, d_model=d_model, nhead=nhead, num_layers=num_layers, dim_feedforward=ff, max_len=max_len)
     else:
         model = NebulaTiny(vocab_size, d_model=d_model, nhead=nhead, num_layers=num_layers, dim_feedforward=ff, max_len=max_len)
-    # try to load tolerant
     try:
         model.load_state_dict(state)
     except Exception:
-        # try strip module. and adapt pe if necessary (best effort)
         new_state = {}
         for k,v in state.items():
             nk = k[len("module."): ] if k.startswith("module.") else k
@@ -78,9 +68,7 @@ def tokenize_and_ids(tok, trace, max_len):
     return ids
 
 def ids_to_trace_from_tokens(tok, ids):
-    # produce a trace string from token ids (used for saving)
     toks = tok.decode(ids)
-    # join preserving token spacing
     return " ".join(toks)
 
 # ---------- saliency functions ----------
@@ -94,23 +82,16 @@ def compute_token_saliency_for_sequence(model, device, input_ids, target_class=1
      - forward through model.forward_from_embeddings (if available) or model(ids) with embeddings substitution
     """
     model.eval()
-    # prepare tensor
     ids_tensor = torch.tensor([input_ids], dtype=torch.long, device=device)  # [1,L]
-    # get embedding layer
-    embed = model.get_embedding_weight()  # returns weight tensor on cpu maybe
-    # We will use model.embed so we'll do forward with embeddings requiring grads
+    embed = model.get_embedding_weight()  
     emb_layer = model.embed
-    # lookup embeddings
     emb = emb_layer(ids_tensor)  # [1,L,D]
     emb = emb.detach().clone()
     emb.requires_grad_()
-    # forward using forward_from_embeddings if present
     if hasattr(model, "forward_from_embeddings"):
         logits = model.forward_from_embeddings(emb)  # [1,2]
     else:
-        # fallback: we do forward by mapping emb to model forward - but models accept ids. Not ideal.
         logits = model(ids_tensor)
-    # pick malware logit (assuming logits raw)
     malware_logit = logits[:, target_class].sum()
     malware_logit.backward(retain_graph=False)
     grads = emb.grad  # [1,L,D]
@@ -141,7 +122,7 @@ def attack_sample_greedy(model, device, tok, api_cands, sid, label, trace, args)
     target_prob = args.target_prob
 
     ids = tok.encode(trace, max_len=max_len)
-    orig_ids = ids[:]  # list
+    orig_ids = ids[:] 
     changed_positions = set()
     history = []
     # evaluate original prob
@@ -153,28 +134,24 @@ def attack_sample_greedy(model, device, tok, api_cands, sid, label, trace, args)
     for it in range(iter_steps):
         if len(changed_positions) >= n_replace_total:
             break
-        # compute saliency
+        # computing saliency
         sal = compute_token_saliency_for_sequence(model, device, ids, target_class=1)  # array len L
-        # mask positions already changed
+        # masking positions already changed
         cand_positions = [i for i in np.argsort(-sal)[:topk_salient] if i not in changed_positions]
         if len(cand_positions) == 0:
             break
-        # try replacements for these positions (greedy order)
         for pos in cand_positions:
             if len(changed_positions) >= n_replace_total:
                 break
-            # sample candidate tokens to try (avoid original token)
             tries = random.sample(api_cands, min(cand_sample, len(api_cands)))
             best_token = None
             best_prob = curr_prob
             best_id = None
             for tokstr in tries:
-                # map tokstr -> id (tokenizer expects mapping)
+                # maps tokstr -> id (bcs tokenizer expects mapping)
                 cand_id = tok.vocab.get(tokstr, tok.unk_id)
-                # skip if same
                 if cand_id == ids[pos]:
                     continue
-                # create candidate ids
                 cand_ids = ids[:]
                 cand_ids[pos] = cand_id
                 with torch.no_grad():
@@ -194,11 +171,11 @@ def attack_sample_greedy(model, device, tok, api_cands, sid, label, trace, args)
                 if target_prob is not None and curr_prob <= target_prob:
                     break
         # end for cand_positions
-        # optional break if no improvement
+        # break if no improvement
         if len(history) == 0 and it > 0:
             break
 
-    # build attacked trace
+    # building attacked trace
     attacked_trace = ids_to_trace_from_tokens(tok, ids)
     return attacked_trace, len(changed_positions), orig_prob, curr_prob, history
 
@@ -228,8 +205,7 @@ def main():
     device = torch.device(args.device if torch.cuda.is_available() and args.device!="cpu" else "cpu")
     print("Device:", device)
 
-    tok = Tokenizer(args.vocab)  # requires vocab json with .get mapping
-    # attach vocab dict on tokenizer for convenience if not present
+    tok = Tokenizer(args.vocab)  
     if not hasattr(tok, "vocab"):
         try:
             tok.vocab = json.load(open(args.vocab,"r",encoding="utf-8"))
@@ -239,17 +215,11 @@ def main():
     api_cands = json.load(open(args.api_candidates,"r",encoding="utf-8"))
     print("Loaded api candidates:", len(api_cands))
 
-    # build model
-    # infer vocab_size
-    try:
-        vocab_json = json.load(open(args.vocab, "r", encoding="utf-8"))
-        vocab_size = len(vocab_json)
-    except Exception:
-        vocab_size = 25000
+    vocab_json = json.load(open(args.vocab, "r", encoding="utf-8"))
+    vocab_size = len(vocab_json)
     model = load_model_simple(args.ckpt, vocab_size, device)
     model.eval()
 
-    # read input TSV
     rows = []
     with open(args.in_tsv, "r", encoding="utf-8", errors="ignore") as f:
         for ln in f:
