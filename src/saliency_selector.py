@@ -29,7 +29,7 @@ from tqdm import tqdm
 import torch
 import numpy as np
 
-from tokenizer import tokenize, load_vocab, tokens_to_ids
+from old_tokenizer import tokenize, load_vocab, tokens_to_ids
 from nebula_model import NebulaTiny
 
 # Helper: load model like window_eval_plot did

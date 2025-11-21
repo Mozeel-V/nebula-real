@@ -22,7 +22,7 @@ from pathlib import Path
 import numpy as np
 import torch
 
-from tokenizer import tokenize, load_vocab, tokens_to_ids
+from old_tokenizer import tokenize, load_vocab, tokens_to_ids
 from nebula_model import NebulaTiny
 
 def try_load_ckpt(ckpt_path, vocab_path=None, device=None):

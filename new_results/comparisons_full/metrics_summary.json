@@ -1,0 +1,58 @@
+{
+  "thr_used": 0.911801288443,
+  "n_samples": 2000,
+  "window_before": {
+    "tp": 992,
+    "fp": 0,
+    "tn": 61000,
+    "fn": 60008
+  },
+  "window_after": {
+    "tp": 838,
+    "fp": 0,
+    "tn": 61000,
+    "fn": 60162
+  },
+  "sample_or_before": {
+    "tp": 24,
+    "fp": 0,
+    "tn": 1000,
+    "fn": 976
+  },
+  "sample_or_after": {
+    "tp": 21,
+    "fp": 0,
+    "tn": 1000,
+    "fn": 979
+  },
+  "malware_sample_before": {
+    "tp": 24,
+    "fp": 0,
+    "tn": 0,
+    "fn": 976
+  },
+  "malware_sample_after": {
+    "tp": 21,
+    "fp": 0,
+    "tn": 0,
+    "fn": 979
+  },
+  "benign_sample_before": {
+    "tp": 0,
+    "fp": 0,
+    "tn": 1000,
+    "fn": 0
+  },
+  "benign_sample_after": {
+    "tp": 0,
+    "fp": 0,
+    "tn": 1000,
+    "fn": 0
+  },
+  "evaded_count": 3,
+  "evaded_samples": [
+    "35172",
+    "43738",
+    "55327"
+  ]
+}

@@ -42,7 +42,7 @@ import torch
 import matplotlib.pyplot as plt
 
 # local imports (tokenizer + model)
-from tokenizer import tokenize, load_vocab, tokens_to_ids
+from old_tokenizer import tokenize, load_vocab, tokens_to_ids
 from nebula_model import NebulaTiny
 
 # helper to load model with config in checkpoint

@@ -23,7 +23,7 @@ import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader, random_split
 import torch.optim as optim
 
-from tokenizer import tokenize, build_vocab, save_vocab, load_vocab, tokens_to_ids, PAD_TOKEN, UNK_TOKEN
+from old_tokenizer import tokenize, build_vocab, save_vocab, load_vocab, tokens_to_ids, PAD_TOKEN, UNK_TOKEN
 from nebula_model import NebulaTiny
 
 

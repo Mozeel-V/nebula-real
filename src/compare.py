@@ -7,9 +7,6 @@ Compare BEFORE and AFTER window evaluations and create **class-timeline** plots
 - Converts per-window probabilities -> classes using thr
 - Produces per-sample PNGs into out_dir/per_sample/ (filename sample_<sid>.png)
 - Produces a CSV / JSON summary with counts (mal windows before/after, flipped windows)
-
-Usage:
-  n
 """
 import argparse, json, csv
 from pathlib import Path

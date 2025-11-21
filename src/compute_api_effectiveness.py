@@ -26,7 +26,7 @@ from typing import List
 import numpy as np
 import torch
 
-from tokenizer import tokenize, load_vocab, tokens_to_ids
+from old_tokenizer import tokenize, load_vocab, tokens_to_ids
 from nebula_model import NebulaTiny
 
 # -------------------------
@@ -139,7 +139,7 @@ class ModelScorer:
         return float(probs)
 
 # Use the tokenizer helper (we re-import here to ensure local scope)
-from tokenizer import tokens_to_ids, load_vocab
+from old_tokenizer import tokens_to_ids, load_vocab
 
 # -------------------------
 # Main estimation routine
