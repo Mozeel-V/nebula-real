@@ -1,0 +1,314 @@
+{
+  "best_combo": {
+    "thr": 0.73107730112,
+    "minwins": 0,
+    "consecutive_k": 2,
+    "tp": 0,
+    "fp": 0,
+    "tn": 1000,
+    "fn": 1000,
+    "n_samples": 2000
+  },
+  "top_candidates": [
+    {
+      "thr": 0.73107730112,
+      "minwins": 0,
+      "consecutive_k": 2,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.73107730112,
+      "minwins": 1,
+      "consecutive_k": 2,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.73107730112,
+      "minwins": 2,
+      "consecutive_k": 2,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.73107730112,
+      "minwins": 3,
+      "consecutive_k": 2,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.731768405151,
+      "minwins": 0,
+      "consecutive_k": 2,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.731768405151,
+      "minwins": 1,
+      "consecutive_k": 2,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.731768405151,
+      "minwins": 2,
+      "consecutive_k": 0,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.731768405151,
+      "minwins": 2,
+      "consecutive_k": 2,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.731768405151,
+      "minwins": 3,
+      "consecutive_k": 0,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.731768405151,
+      "minwins": 3,
+      "consecutive_k": 2,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.732459509182,
+      "minwins": 0,
+      "consecutive_k": 2,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.732459509182,
+      "minwins": 1,
+      "consecutive_k": 2,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.732459509182,
+      "minwins": 2,
+      "consecutive_k": 0,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.732459509182,
+      "minwins": 2,
+      "consecutive_k": 2,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.732459509182,
+      "minwins": 3,
+      "consecutive_k": 0,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.732459509182,
+      "minwins": 3,
+      "consecutive_k": 2,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.733150613212,
+      "minwins": 0,
+      "consecutive_k": 2,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.733150613212,
+      "minwins": 1,
+      "consecutive_k": 2,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.733150613212,
+      "minwins": 2,
+      "consecutive_k": 0,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.733150613212,
+      "minwins": 2,
+      "consecutive_k": 2,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.733150613212,
+      "minwins": 3,
+      "consecutive_k": 0,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.733150613212,
+      "minwins": 3,
+      "consecutive_k": 2,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.733841717243,
+      "minwins": 0,
+      "consecutive_k": 2,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.733841717243,
+      "minwins": 1,
+      "consecutive_k": 2,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.733841717243,
+      "minwins": 2,
+      "consecutive_k": 0,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.733841717243,
+      "minwins": 2,
+      "consecutive_k": 2,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.733841717243,
+      "minwins": 3,
+      "consecutive_k": 0,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.733841717243,
+      "minwins": 3,
+      "consecutive_k": 2,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.730386197089,
+      "minwins": 3,
+      "consecutive_k": 0,
+      "tp": 34,
+      "fp": 7,
+      "tn": 993,
+      "fn": 966,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.73107730112,
+      "minwins": 2,
+      "consecutive_k": 0,
+      "tp": 34,
+      "fp": 7,
+      "tn": 993,
+      "fn": 966,
+      "n_samples": 2000
+    }
+  ]
+}

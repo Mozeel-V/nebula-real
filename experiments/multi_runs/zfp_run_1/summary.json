@@ -1,0 +1,23 @@
+{
+  "n_samples": 2000,
+  "grid_samples": 500,
+  "max_minwins": 3,
+  "max_consecutive_k": 2,
+  "score_stats": {
+    "min": 0.23250988125801086,
+    "max": 0.7219846248626709,
+    "mean": 0.40139255966844617,
+    "median": 0.3611355721950531,
+    "std": 0.10522172201545857
+  },
+  "best_combo": {
+    "thr": 0.714137334384,
+    "minwins": 0,
+    "consecutive_k": 0,
+    "tp": 30,
+    "fp": 0,
+    "tn": 1000,
+    "fn": 970,
+    "n_samples": 2000
+  }
+}

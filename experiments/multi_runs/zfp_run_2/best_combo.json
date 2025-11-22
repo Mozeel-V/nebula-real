@@ -1,0 +1,314 @@
+{
+  "best_combo": {
+    "thr": 0.705227851868,
+    "minwins": 0,
+    "consecutive_k": 0,
+    "tp": 0,
+    "fp": 0,
+    "tn": 1000,
+    "fn": 1000,
+    "n_samples": 2000
+  },
+  "top_candidates": [
+    {
+      "thr": 0.703067616375,
+      "minwins": 0,
+      "consecutive_k": 2,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.703067616375,
+      "minwins": 1,
+      "consecutive_k": 2,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.703067616375,
+      "minwins": 2,
+      "consecutive_k": 2,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.703067616375,
+      "minwins": 3,
+      "consecutive_k": 2,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.703607675248,
+      "minwins": 0,
+      "consecutive_k": 2,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.703607675248,
+      "minwins": 1,
+      "consecutive_k": 2,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.703607675248,
+      "minwins": 2,
+      "consecutive_k": 2,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.703607675248,
+      "minwins": 3,
+      "consecutive_k": 2,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.704147734121,
+      "minwins": 0,
+      "consecutive_k": 2,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.704147734121,
+      "minwins": 1,
+      "consecutive_k": 2,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.704147734121,
+      "minwins": 2,
+      "consecutive_k": 2,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.704147734121,
+      "minwins": 3,
+      "consecutive_k": 2,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.704687792994,
+      "minwins": 0,
+      "consecutive_k": 2,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.704687792994,
+      "minwins": 1,
+      "consecutive_k": 2,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.704687792994,
+      "minwins": 2,
+      "consecutive_k": 2,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.704687792994,
+      "minwins": 3,
+      "consecutive_k": 2,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.705227851868,
+      "minwins": 0,
+      "consecutive_k": 0,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.705227851868,
+      "minwins": 0,
+      "consecutive_k": 1,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.705227851868,
+      "minwins": 0,
+      "consecutive_k": 2,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.705227851868,
+      "minwins": 1,
+      "consecutive_k": 0,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.705227851868,
+      "minwins": 1,
+      "consecutive_k": 1,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.705227851868,
+      "minwins": 1,
+      "consecutive_k": 2,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.705227851868,
+      "minwins": 2,
+      "consecutive_k": 0,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.705227851868,
+      "minwins": 2,
+      "consecutive_k": 1,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.705227851868,
+      "minwins": 2,
+      "consecutive_k": 2,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.705227851868,
+      "minwins": 3,
+      "consecutive_k": 0,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.705227851868,
+      "minwins": 3,
+      "consecutive_k": 1,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.705227851868,
+      "minwins": 3,
+      "consecutive_k": 2,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1000,
+      "fn": 1000,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.690106203418,
+      "minwins": 0,
+      "consecutive_k": 0,
+      "tp": 61,
+      "fp": 7,
+      "tn": 993,
+      "fn": 939,
+      "n_samples": 2000
+    },
+    {
+      "thr": 0.690106203418,
+      "minwins": 0,
+      "consecutive_k": 1,
+      "tp": 61,
+      "fp": 7,
+      "tn": 993,
+      "fn": 939,
+      "n_samples": 2000
+    }
+  ]
+}

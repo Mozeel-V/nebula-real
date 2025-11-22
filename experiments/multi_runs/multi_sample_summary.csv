@@ -1,0 +1,4 @@
+run,seed,subset_tsv,ckpt_dir,ckpt,we_json,thr_used,train_time_sec,eval_time_sec,n_samples_eval,malware_sample_tp,malware_sample_fp,malware_sample_tn,malware_sample_fn
+1,42,experiments\multi_runs\subset_1_42.tsv,experiments\multi_runs\ckpt_run_1,experiments\multi_runs\ckpt_run_1\best.pt,experiments\multi_runs\window_eval_before_run_1\window_eval.json,0.714137334384,86.9,35.37,2000,30,0,1000,970
+2,43,experiments\multi_runs\subset_2_43.tsv,experiments\multi_runs\ckpt_run_2,experiments\multi_runs\ckpt_run_2\best.pt,experiments\multi_runs\window_eval_before_run_2\window_eval.json,0.705227851868,61.67,13.64,2000,0,0,1000,1000
+3,44,experiments\multi_runs\subset_3_44.tsv,experiments\multi_runs\ckpt_run_3,experiments\multi_runs\ckpt_run_3\best.pt,experiments\multi_runs\window_eval_before_run_3\window_eval.json,0.73107730112,59.64,13.45,2000,50,22,978,950
