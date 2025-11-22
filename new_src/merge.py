@@ -6,7 +6,6 @@ ROOT_DIR = 'new_results/classes_split/goodware'
 BEFORE_DIR = os.path.join(ROOT_DIR, 'before')
 AFTER_DIR = os.path.join(ROOT_DIR, 'after')
 MERGED_DIR = os.path.join(ROOT_DIR, 'merged')
-# ---------------------
 
 def merge_images_side_by_side_random():
     """
@@ -14,12 +13,12 @@ def merge_images_side_by_side_random():
     corresponding files in the 'after' directory.
     """
     
-    # 1. Create the output directory if it doesn't exist
+    # 1. Creating the output directory if it doesn't exist
     if not os.path.exists(MERGED_DIR):
         os.makedirs(MERGED_DIR)
         print(f"Created directory: {MERGED_DIR}")
 
-    # 2. Get the list of all PNG filenames from the 'before' directory
+    # 2. Getting the list of all PNG filenames from the 'before' directory
     before_files = [f for f in os.listdir(BEFORE_DIR) if f.endswith('.png')]
     num_files_to_process = len(before_files)
     
@@ -32,14 +31,11 @@ def merge_images_side_by_side_random():
         before_path = os.path.join(BEFORE_DIR, filename)
         after_path = os.path.join(AFTER_DIR, filename)
         merged_path = os.path.join(MERGED_DIR, filename)
-
-        # 4. Check if the corresponding file exists in the 'after' directory
         if not os.path.exists(after_path):
             print(f"Skipping {filename}: Corresponding file not found in '{AFTER_DIR}'.")
             continue
 
         try:
-            # Open the images
             img_before = Image.open(before_path)
             img_after = Image.open(after_path)
             
@@ -53,11 +49,9 @@ def merge_images_side_by_side_random():
 
             merged_image = Image.new('RGB', (new_width, new_height))
             
-            # Paste side-by-side
+            # Pasting side-by-side
             merged_image.paste(img_before, (0, 0))
             merged_image.paste(img_after, (img_before.width, 0))
-
-            # Save the result
             merged_image.save(merged_path)
             
             processed_count += 1
@@ -67,10 +61,7 @@ def merge_images_side_by_side_random():
         except Exception as e:
             print(f"An unexpected error occurred while processing {filename}: {e}")
 
-    print("---")
-    print(f"✅ Finished! Successfully merged {processed_count} image pairs into the **{MERGED_DIR}** folder.")
+    print(f"Finished! Successfully merged {processed_count} image pairs into the **{MERGED_DIR}** folder.")
 
-# Execute the function
 if __name__ == "__main__":
-    # Ensure you have Pillow installed: pip install Pillow
     merge_images_side_by_side_random()
